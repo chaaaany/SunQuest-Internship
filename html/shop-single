@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Clover Uniform</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="/img/apple-icon.png">
+    <link rel="shortcut icon" href="/img/icon/clov-16.ico" />
+
+    <!-- Start timezone-master-css index.html fonts -->
+    <link rel="stylesheet" href="/timezone-master-css/bootstrap.min.css">
+    <link rel="stylesheet" href="/timezone-master-css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/timezone-master-css/flaticon.css">
+    <link rel="stylesheet" href="/timezone-master-css/slicknav.css">
+    <link rel="stylesheet" href="/timezone-master-css/animate.min.css">
+    <link rel="stylesheet" href="/timezone-master-css/magnific-popup.css">
+    <link rel="stylesheet" href="/timezone-master-css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/timezone-master-css/themify-icons.css">
+    <link rel="stylesheet" href="/timezone-master-css/slick.css">
+    <link rel="stylesheet" href="/timezone-master-css/nice-select.css">
+    <link rel="stylesheet" href="/timezone-master-css/style.css">
+    <!-- End timezone-master-css index.html fonts -->
+
+    <!--ogani-master CSS Start-->
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="/ogani-master-css/bootstrap.min.css" >
+    <link rel="stylesheet" href="/ogani-master-css/font-awesome.min.css" >
+    <link rel="stylesheet" href="/ogani-master-css/elegant-icons.css" >
+    <link rel="stylesheet" href="/ogani-master-css/nice-select.css" >
+    <link rel="stylesheet" href="/ogani-master-css/jquery-ui.min.css" >
+    <link rel="stylesheet" href="/ogani-master-css/owl.carousel.min.css" >
+    <link rel="stylesheet" href="/ogani-master-css/slicknav.min.css" >
+    <link rel="stylesheet" href="/ogani-master-css/style.css" >
+    <!--ogani-master CSS End-->
+
+    
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/templatemo.css">
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+
+    <!-- Slick -->
+    <link rel="stylesheet" href="/css/slick.min.css">
+    <link rel="stylesheet" href="/css/slick-theme.css">
+    <!--plus details-->
+    <link href="/css/details.css" rel="stylesheet">
+    <link href="/css/embroidery.css" rel="stylesheet">
+   
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+
+
+        <!-- Start Script -->
+    <script src="/js/jquery-1.11.0.min.js"></script>
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/templatemo.js"></script>
+    <script src="/js/custom.js"></script>
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+
+    <!-- Core Item New Css-->
+    <link rel="stylesheet" href="/css/circle-color.css">
+
+
+    <script src="/js/jquery-1.11.0.min.js"></script>
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/templatemo.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="/js/color-index.js" charset="utf-8"></script>
+
+    <!-- End Script -->
+
+    <!-- Start Slider Script -->
+    <script src="/js/slick.min.js"></script>
+
+<!--변경 된 부분!!!!!!-->
+<script>
+    function Edit(id) {
+        window.location.href = "/userEdit?id=" + id;
+    }
+    function Delete(id) {
+        var rs = confirm('Confirm to delete?');
+        if (rs) {
+            window.location.href = "/userDelete?id=" + id;
+        }
+    }
+    function Search() {
+        var userid = document.getElementsByName('suserid')[0].value;
+        window.location.href = "/?user=" + userid;;
+    }
+</script>
+<!-- 여기까지-->
+</head>
+
+
+<body>
+    <!--Top Nav-->
+    <!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:CS@cloveruniforms.com">CS@cloveruniforms.com</a>
+                   <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:212-730-2831">212-730-2831</a>
+                </div>
+                <div>
+                    <a href="/login"><img src="/img/icon/Login.png" width="20" height="20" vspace="1" hspace="2"></a>
+                    <a href="/login" style="color: white">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav --><center> </center>
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container 0d-flex justify-content-between align-items-center">
+
+            <a href="/"><img src="/img/icon/Clover.png" width="200" height="40" vspace="20"><a/>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Womens-Scrubs">Womens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Mens-Scrubs">Mens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Accessories-Women">Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/GroupOrder">Group Order</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="shopping-cart.html">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        
+                    </a>
+                    
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--content query script-->
+    <script>
+        var ID;
+        var nowLoc = window.location.href;
+        var test;
+
+        for(i=0; i < nowLoc.length; i++){
+            if(nowLoc[i] == '?'){
+                if(nowLoc.length - i == 6 ){
+                    ID = nowLoc.slice(i+4,nowLoc.length);
+                } 
+                else if(nowLoc.length - i == 5){
+                    ID = nowLoc.slice(length-1);
+                }
+                
+                break;
+            }
+        }
+
+        //test = nowLoc.slice(length-1);
+        //test = nowLoc.length;
+        let xhttp = new XMLHttpRequest();
+        
+        xhttp.onreadystatechange = function () {
+            if(xhttp.readyState == 4 && xhttp.status == 200){
+                
+                jsonfunc(this.responseText); //this = xhttp
+            }
+        }
+
+        xhttp.open("GET","https://www.cloveruniforms.com/product-json?id=" + ID, true);//
+        xhttp.send();
+        let json;
+        
+        function jsonfunc( jsonText ) {
+            json = JSON.parse(jsonText);
+            var cat = "";
+            if(json[0].SEX == "W"){ cat += "Women's ";}
+            else {cat += "Men's ";}
+            if(json[0].P_CAT == "SC"){ cat += "Scrub";}
+            else if(json[0].P_CAT == "ACC"){ cat += "Accessories";}
+            else if(json[0].P_CAT == "LC"){ cat += "Lab Coat";}
+            else if(json[0].P_CAT == "PG"){ cat += "Patient Gown";}
+            else if(json[0].P_CAT == "OA"){ cat += "other apparel";}
+
+            var path = "<img class=\"card-img img-fluid\" src=\"" + json[0].PATH + "\"alt=\"Card image cap\" id=\"product-detail\">";
+
+            
+            document.getElementById('path').innerHTML = path;
+            document.getElementById('category').innerHTML = cat;
+            document.getElementById('name').innerHTML = json[0].P_NAME;
+            document.getElementById('careInfo').innerHTML =  "<br>" + json[0].FABRIC + "<br>" + json[0].CARE_INS + "<br>";
+            document.getElementById('productInfo').innerHTML =  "<br>" + json[0].P_DETAIL + "<br>";
+            document.getElementById('price').innerHTML = "$"+json[0].PRICE;
+        }
+    </script>
+    
+
+
+    <!--Content-->
+    <section class="bg-light">
+        <!-- item summary container-->
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-lg-5 mt-5">
+                    <div class="card mb-3">
+                        <div id = "path">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--Start Controls-->
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="prev">
+                                <i class="text-dark fas fa-chevron-left"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </div>
+                        <!--End Controls-->
+
+
+
+                        <!--Start Carousel Wrapper-->
+                        <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+                            <!--Start Slides-->
+                            <div class="carousel-inner product-links-wap" role="listbox">
+
+                                <!--First slide-->
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="/img/product_single_01.jpg" alt="Product Image 1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="/img/product_single_02.jpg" alt="Product Image 2">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="/img/product_single_03.jpg" alt="Product Image 3">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.First slide-->
+
+                                <!--Second slide-->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="/img/product_single_04.jpg" alt="Product Image 4">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="/img/product_single_05.jpg" alt="Product Image 5">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="/img/product_single_06.jpg" alt="Product Image 6">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.Second slide-->
+
+                                <!--Third slide-->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="/img/product_single_07.jpg" alt="Product Image 7">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="/img/product_single_08.jpg" alt="Product Image 8">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="/img/product_single_09.jpg" alt="Product Image 9">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.Third slide-->
+                            </div>
+                            <!--End Slides-->
+                        </div>
+                        <!--End Carousel Wrapper-->
+
+
+
+
+
+                        <!--Start Controls-->
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="next">
+                                <i class="text-dark fas fa-chevron-right"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <!--End Controls-->
+                    </div>
+                </div>
+                <!-- col end -->
+                
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-body">
+                                <div class="product-description">
+                                    <span id = "test"></span>
+                                    <span id = "category"></span> <!---->
+                                    <h1 id = "name">/h1><!--Product name-->
+                                    <p></p>
+                                    <!--<p>use light material, nylon</p> -->
+                                </div>
+                               
+                                <!-- Product Color -->
+                                <div class="product-color">
+                                    <span>Color</span>
+                        
+                                    <div class="color-choose">
+                                      <div id="circle-color-black-big"></div>
+                                      <div id="circle-color-royalblue-big"></div>
+                                      <div id="circle-color-steelgrey-big"></div>
+                                      <div id="circle-color-carribeanblue-big"></div>
+                                      <div id="circle-color-burgundy-big"></div>
+                                      <div id="circle-color-red-big"></div>
+                                      <div id="circle-color-navy-big"></div>
+                                      <div id="circle-color-hundergreen-big"></div>
+                                      <div id="circle-color-charcoalgrey-big"></div>
+                                      <div id="circle-color-white-big"></div>
+                                    </div>
+                                    
+                                </div>
+                        
+                                <!-- Product Quantity -->
+                                <div class="product-color">
+                                    <span>Quantity</span>
+                                    <ul class="list-inline pb-3">
+                                        <li class="list-inline-item text-right">
+                                            
+                                            <input type="hidden" name="product-quanity" value="1">
+                                        </li>
+                                        <li class="list-inline-item"><span class="btn btn-success" id="btn-minus">-</span></li>
+                                        <li class="list-inline-item"><p class="badge bg-secondary" id="var-value">1</p></li>
+                                        <li class="list-inline-item"><span class="btn btn-success" id="btn-plus">+</span></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="product-color">
+                                    <span>Embroidery</span>
+                                    <div class="cable-choose">
+                                        <button href="#layer1" class="btn-example"
+                                            onclick="window.open('shop-single-popup.html','window_name','width=718,height=1200,location=no,status=no,scrollbars=yes');">
+                                            Custom Embroidery</button>
+                                    </div>
+
+                                    
+                                </div>
+                                    <div class="row">
+                                        <div class="cable-config">
+                                            <span>Size</span>
+                                            <div class="cable-choose">
+                                                <button>XS</button>
+                                                <button>S</button>
+                                                <button>M</button>
+                                                <button>L</button>
+                                                <button>XL</button>
+                                                <button>XXL</button>
+                                            </div>
+                                            <div class="product-color"></div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="row pb-3">
+                                        <div class="product-price">
+                                            <span id = "price"></span>
+                                            <a href="/shop" class="cart-btn">Go to order</a>
+                                        </div>
+                                       
+                                    </div>
+                                </form>
+                                
+                                
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--item details container-->
+        <div class="container pb-5">
+            <div class="col-lg-12 mt-5">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="card-body">
+                            <div class="product-description">
+                                <br><br><br>
+                                <h1>Fabric & Care Instructions</h1><br>
+                                <p id = "careInfo"></p>
+                                <br>
+                                <h1>Product descriptions</h1><br>
+                                <p id="productInfo"></p>
+                                <br>
+                                <h1>Fit</h1><br>
+                                <p>Model is 5’4”</p>
+                                <p>Wearing Size S</p>
+            
+                                <br>
+                            </div>
+                            <img class="card-img img-fluid" src="/img/sunqeust-product/top1.png" id="product-detail">
+                            
+                        </div>
+                        
+                    </div>
+                    
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Close Content -->
+    
+
+    
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">CLOVER</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            419 WEST 145TH STREET NEW YORK, NY 10031
+
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:212-730-2831">212-730-2831</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@styleciti.com">CS@cloveruniforms.com</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none" href="about.html">About us</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none" href="term-and-policy.html">Terms & Policy</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none" href="#">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="/Womens-Scrubs">Scrubs</a></li>
+                        <li><a class="text-decoration-none" href="/Womens-LabCoats">Lab Coats</a></li>
+                        <li><a class="text-decoration-none" href="/Womens-OtherApparel">Other Apparel</a></li>
+                        <li><a class="text-decoration-none" href="/Womens-PatientGowns">Patient Gowns</a></li>
+                        <li><a class="text-decoration-none" href="/Accessories-Women">Accessories</a></li>
+                        <li><a class="text-decoration-none" href="/GroupOrder">Group Order</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">More Info</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">######</a></li>
+                        <li><a class="text-decoration-none" href="#">######</a></li>
+                        <li><a class="text-decoration-none" href="#">######</a></li>
+                        <li><a class="text-decoration-none" href="#">######</a></li>
+                        <li><a class="text-decoration-none" href="#">######</a></li>
+                        <li><a class="text-decoration-none" href="#">######</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Start Slider Script -->
+    <script>
+        $('#carousel-related-product').slick({
+            infinite: true,
+            arrows: false,
+            slidesToShow: 4,
+            slidesToScroll: 3,
+            dots: true,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 3
+                    }
+                }
+            ]
+        });
+    </script>
+    <!-- End Slider Script -->
+</body>
+
+</html>

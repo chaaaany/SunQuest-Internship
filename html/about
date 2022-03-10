@@ -1,0 +1,30 @@
+    <section class="bg-success py-5">
+        <div class="container">
+            <div class="row align-items-center py-5">
+                <div class="col-md-8 text-white">
+                    <h1>About Us</h1>
+                    <p>
+                        We are headquartered in the center of garment district in New York city since 1999,
+                        Our commitment to our customers is to provide value without 
+                        compromising quality.  Our collections exemplify the innovation and 
+                        imagination of our cutting edge design team in creating and 
+                        trendsetting that are flattering and comfortable to wear.
+
+                        At Clover uniforms we value relationships, Our relationships with our 
+                        suppliers ensure our customers they will continue to receive quality 
+                        clothing at affordable price.
+
+                        Our teams are here to support for any questions you may have. 
+                        Please contact us at CS@cloveruniforms.com.
+                        We are always happy to hear from you.
+
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="/img/about-hero.svg" alt="About Hero">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Close Banner -->
+

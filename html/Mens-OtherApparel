@@ -1,0 +1,198 @@
+<script>
+
+        let xhttp = new XMLHttpRequest();
+        
+        xhttp.onreadystatechange = function () {
+            if(xhttp.readyState == 4 && xhttp.status == 200){
+                jsonfunc(this.responseText); //this = xhttp
+            }
+        }
+
+        xhttp.open("GET","https://www.cloveruniforms.com/men-otherapparel-json", true);
+        xhttp.send();
+        let json;
+        
+
+        function jsonfunc( jsonText ) {
+            json = JSON.parse(jsonText);
+            let txt = "";
+            for(i=0; i<json.length; i++){
+                txt += "<div class=\"col-lg-4 col-sm-6\"><div class=\"product-item\">";
+                txt += "<div class=\"pi-pic\"><img src=\" ";
+                txt += json[i].PATH;
+                txt += "\" alt=\"\"><div class=\"icon\"><i class=\"icon_heart_alt\"></i></div><ul>";
+                txt += "<li class=\"w-icon active\"><a href=\"#\"><i class=\"icon_bag_alt\"></i></a></li>";
+                txt += "<li class=\"quick-view\"><a href=\"https://www.cloveruniforms.com/shop-single?id=" +json[i].P_ID;
+                txt += "\">+ Quick View</a></li>";
+                txt += "<li class=\"w-icon\"><a href=\"#\"><i class=\"fa fa-random\"></i></a></li>";
+                txt += "</ul></div><div class=\"pi-text\"><div class=\"catagory-name\">";
+                txt += json[i].SORT;
+                txt += "</div><a href=\"#\"><h5>";
+                txt += json[i].P_NAME;
+                txt += "</h5></a><div class=\"product-price\">$";
+                txt += json[i].PRICE;
+                txt += "</div></div></div></div>"
+            } 
+            //document.getElementById('test').innerHTML = json[0].P_NAME;
+            document.getElementById('list').innerHTML = txt;
+        }
+
+
+        //check box
+        function getCheckboxValue(event)  {
+
+            //return
+            let txt = "";
+
+            // bring selected checkboxs
+            const query = 'input[name="sort"]:checked';
+            const selectedEls = document.querySelectorAll(query);
+
+            selectedEls.forEach((el) => {
+
+                var listchecked = new Array();
+
+                //checking
+                for(i=0; i<json.length; i++){
+
+                    if(json[i].SORT == el.value){
+                        listchecked[i] = true;
+                    }
+                    else{
+                        listchecked[i] = false;
+                    }
+                }
+                    
+                    
+
+                // replace list
+                for(i=0; i < json.length; i++){
+                    if(listchecked[i]){
+                        txt += "<div class=\"col-lg-4 col-sm-6\"><div class=\"product-item\">";
+                        txt += "<div class=\"pi-pic\"><img src=\" ";
+                        txt += json[i].PATH;
+                        txt += "\" alt=\"\"><div class=\"icon\"><i class=\"icon_heart_alt\"></i></div><ul>";
+                        txt += "<li class=\"w-icon active\"><a href=\"#\"><i class=\"icon_bag_alt\"></i></a></li>";
+                        txt += "<li class=\"quick-view\"><a href=\"https://www.cloveruniforms.com/shop-single?id=" +json[i].P_ID;
+                        txt += "\">+ Quick View</a></li>";
+                        txt += "<li class=\"w-icon\"><a href=\"#\"><i class=\"fa fa-random\"></i></a></li>";
+                        txt += "</ul></div><div class=\"pi-text\"><div class=\"catagory-name\">";
+                        txt += json[i].SORT;
+                        txt += "</div><a href=\"#\"><h5>";
+                        txt += json[i].P_NAME;
+                        txt += "</h5></a><center><div class=\"product-price\"> $";
+                        txt += json[i].PRICE;
+                        txt += "</div></center></div></div></div>"
+                    }
+                }
+                
+            });
+
+            document.getElementById('list').innerHTML = txt; //= txt;
+        }
+
+
+
+    </script>
+
+
+
+<!-- Product Shop Section Begin -->
+    <section class="product-shop spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1 produts-sidebar-filter">
+                    <div class="filter-widget">
+                        <h4 class="fw-title">Categories</h4>
+                        <ul class="filter-catagories">
+                            <li><a href="/Mens-Scrubs">Scrubs</a></li>
+                            <li><a href="/Mens-LabCoats">Lab Coats</a></li>
+                            <li><a href="/Mens-OtherApparel" style="color: #FD86A4">Other Apparel</a></li>
+                            <li><a href="/Mens-PatientGowns">Patient Gowns</a></li>
+                        </ul>
+                    </div>
+                    <div class="filter-widget">
+                        <h4 class="fw-title">Sort</h4>
+                        <div class="fw-brand-check">
+                            <div class="bc-item">
+                                <label for="bc-calvin">
+                                    Under Scrubs
+                                    <input type="checkbox" id="bc-calvin">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="bc-item">
+                                <label for="bc-diesel">
+                                    Vest
+                                    <input type="checkbox" id="bc-diesel">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="bc-item">
+                                <label for="bc-polo">
+                                    Jacket
+                                    <input type="checkbox" id="bc-polo">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-widget">
+                        <h4 class="fw-title">Color</h4>
+
+                        <div id="circle-color-black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Black</div>
+                        <h5><br></h5>
+                        <div id="circle-color-royalblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Royal&nbsp;Blue</div>
+                        <h5><br></h5>
+                        <div id="circle-color-steelgrey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Steel&nbsp;Grey</div>
+                        <h5><br></h5>
+                        <div id="circle-color-carribeanblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carribean&nbsp;Blue</div>
+                        <h5><br></h5>
+                        <div id="circle-color-burgundy">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burgundy</div>
+                        <h5><br></h5>
+                        <div id="circle-color-red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Red</div>
+                        <h5><br></h5>
+                        <div id="circle-color-navy">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Navy</div>
+                        <h5><br></h5>
+                        <div id="circle-color-hundergreen">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hunder&nbsp;Green</div>
+                        <h5><br></h5>
+                        <div id="circle-color-charcoalgrey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Charcoal&nbsp;Grey</div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-9 order-1 order-lg-2">
+                    <div class="product-show-option">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-7">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list">
+                        <div class="row" id = "list"></div>
+                    </div>
+                    <div class="loading-more">
+                        <div class="btn-toolbar justify-content-center pb-4" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group me-2" role="group" aria-label="First group">
+                                <button type="button" class="btn btn-secondary text-white">Previous</button>
+                            </div>
+                            <div class="btn-group me-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-light">1</button>
+                            </div>
+                            <div class="btn-group me-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary text-white">2</button>
+                            </div>
+                            <div class="btn-group" role="group" aria-label="Third group">
+                                <button type="button" class="btn btn-secondary text-white">Next</button>
+                            </div>
+                        </div>
+                        <!--i class="icon_loading"></i>
+                        <a href="#">
+                            Loading More
+                        </a-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Shop Section End -->
