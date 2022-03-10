@@ -1,0 +1,72 @@
+#circle-color-black{
+	background-color:black;
+	width:20px;
+	height:20px;
+	border-radius: 10px;
+	line-height: 1.3;
+}
+#circle-color-royalblue{
+	background-color:#1328A4;
+	width:20px;
+	height:20px;
+	border-radius: 10px;
+	line-height: 1.3;
+}
+#circle-color-steelgrey{
+	background-color:#6D757A;
+	width:20px;
+	height:20px;
+	border-radius: 10px;
+	line-height: 1.3;
+}
+#circle-color-carribeanblue{
+	background-color:#45B8D5;
+	width:20px;
+	height:20px;
+	border-radius: 10px;
+	line-height: 1.3;
+}
+#circle-color-burgundy{
+	background-color:#48020B;
+	width:20px;
+	height:20px;
+	border-radius: 10px;
+	line-height: 1.3;
+}
+#circle-color-red{
+	background-color:#D60000;
+	width:20px;
+	height:20px;
+	border-radius: 10px;
+	line-height: 1.3;
+}
+#circle-color-navy{
+	background-color:#132851;
+	width:20px;
+	height:20px;
+	border-radius: 10px;
+	line-height: 1.3;
+}
+#circle-color-hundergreen{
+	background-color:#0F4D34;
+	width:20px;
+	height:20px;
+	border-radius: 10px;
+	line-height: 1.3;
+}
+#circle-color-charcoalgrey{
+	background-color:#565656;
+	width:20px;
+	height:20px;
+	border-radius: 10px;
+	line-height: 1.3;
+}
+#circle-color-white{
+	border : 1px solid black;
+	background-color:white;
+	width:20px;
+	height:20px;
+	border-radius: 10px;
+	line-height: 1.3;
+}
+

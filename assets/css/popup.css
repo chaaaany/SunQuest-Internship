@@ -1,0 +1,120 @@
+.emboridery-left{
+	margin:30px;
+	float:left;
+	width:250px;
+	height: 500px;
+
+}
+.emboridery-right{
+	margin:30px;
+	display:inline-block;
+	width:250px;
+	height: 500px;
+	margin-left:30px;
+
+}
+
+.emboridery-image{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width:250px;
+	height:350px;
+}
+
+.where {
+  display: block;
+  margin: 25px 15px;
+  font-size: 11px;
+  color: #000;
+  text-decoration: none;
+  font-family: verdana;
+  font-style: italic;
+} 
+.myButton { /*Left Button & Right Button*/
+	box-shadow:inset -2px -1px 0px -50px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:12px;
+	padding:9px 19px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton2 {  /* Cancle Button / Apply Embriodery Button*/
+	box-shadow:inset -2px -1px 0px -50px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:12px;
+	padding:12px 35px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffffff;
+}
+.myButton2:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+
+.contect-box select{
+	width: 200px;
+    padding: .8em .5em;
+    border: 1px solid #999;
+    font-family: inherit;
+    background: url('/img/icon/arrow.jpeg')
+    no-repeat 95% 50%;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/*filebox*/
+.filebox label { 
+	display: inline-block;
+	padding: .5em .75em; 
+	color: #black; 
+	font-size: inherit; 
+	line-height: normal; 
+	vertical-align: middle; 
+	background-color: #b0d788; 
+	cursor: pointer; 
+	border: 1px solid #ebebeb; 
+	border-bottom-color: #e2e2e2; 
+	border-radius: .25em; 
+	} 
+.filebox input[type="file"] { /* 파일 필드 숨기기 */ 
+	position: absolute; 
+	width: 1px; 
+	height: 1px; 
+	padding: 0; 
+	margin: -1px; 
+	overflow: hidden; 
+	clip:rect(0,0,0,0); 
+	border: 0; 
+}
+
+

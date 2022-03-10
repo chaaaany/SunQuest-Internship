@@ -1,0 +1,11 @@
+.main_common{
+  background-image:src("assets/img/sunqeust-product/top1.png");
+  background-size: 300px 310px;
+  width: 300px; 
+  height: 310px;
+  display: inline-block;
+}
+
+.popularitem{
+    display: inline-block;
+}
